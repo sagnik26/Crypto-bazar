@@ -10,7 +10,7 @@
 
 
 
-In this website, you can search for global cryptocurrency statistics along with 50 cryptocurrency details (like market capital, daily changes etc.) and news related to cryptocurrencies.
+In this website, you can search for global cryptocurrency statistics along with 50 cryptocurrency coins with details (like market capital, daily changes etc.) and news related to cryptocurrencies.
 
 
 
