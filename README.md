@@ -12,6 +12,8 @@
 
 In this website, you can search for global cryptocurrency statistics along with 50 cryptocurrency coins with details (like market capital, daily changes etc.) and news related to cryptocurrencies.
 
+check it here : [visit crypto-bazar](mycryptobazar.netlify.app)
+
 
 
 ## How to run the project ?
