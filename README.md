@@ -44,7 +44,7 @@ npm start
 
 3. **RapidAPI**, an API marketplace, used for fetching data from two different API endpoints.
 
-   - **_Coinranking API_ ** , used for fetching data related to different cryptocurrencies
+   - **_Coinranking API_** , used for fetching data related to different cryptocurrencies
 
    - **_Bing News Search API_** , used for fetching news related to cryptocurrencies
 
