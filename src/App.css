@@ -1,38 +1,262 @@
-.App {
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-y: hidden;
+}
+
+.background {
+  padding-top: 3.35em;
+  padding-left: 6em;
+  background-color: violet;
+}
+
+.content {
+  width: 95%;
+  height: 95vh;
+  /* margin: 3.8em auto; */
+  border: none;
+  background-color: black;
+  border-radius: 30px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.app {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+}
+
+.navbar {
+  flex: 0.1;
+}
+
+.main {
+  /* border: 1px solid red; */
+  flex:  0.9;
+  /* height: 80vh; */
+  margin: 35px;
+  margin-top: 48px;
+  margin-right: 40px;
+  position: relative;
+  background-color: #040404;
+}
+
+
+/* Navbar */
+
+.nav-container {
+  height: 80vh;
+  margin: 25px;
+  margin-top: 48px;
+  padding-top: 30px;
+  backdrop-filter: blur(12px) saturate(182%);
+  -webkit-backdrop-filter: blur(12px) saturate(182%);
+  background-color: rgba(30, 30, 48, 0.53);
+  border-radius: 20px;
+  border: none; 
+}
+
+
+
+.neontext-crypto {
+  color: #fff;
+  text-shadow:
+    0 0 7px #fff,
+    0 0 15px #fff,
+    0 0 45px rgb(129, 64, 199),
+    0 0 62px rgb(129, 64, 199);
+}
+
+.neonText-stats {
+  color: rgb(129, 64, 199);
+  text-shadow: 
+  0 0 7px rgb(129, 64, 199),
+  0 0 15px rgb(129, 64, 199),
+  0 0 45px #fff,
+  0 0 72px #fff;
+}
+
+.icon-nav {
+  color: #fff;
+  margin: 2em auto;
+}
+
+.icon-nav:hover {
+  color: rgb(129, 64, 199);
+  border-top: 2px solid rgb(129, 64, 199);
+  border-width: 3px;
+  transition: 0.08s ease-out;
+}
+
+.top-icon {
+  margin: 2em 2.3em;
+  margin-top: -3.8em;
+  height: 45px;
+  width: 45px;
+}
+
+.logo {
   text-align: center;
+  margin-bottom: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.menu {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-top: 5em;
+}
+
+.menu li {
+  list-style: none;
+}
+
+.menu-item {
+  margin-top: 70px;
+  height: 25px;
+}
+
+
+
+/* Home */
+
+.globalStats {
+  background-color: black;
+  height: 75vh;
+  padding-left: 7em;
+}
+
+.globalstat-row{
+ text-align: center;
+ padding-top: 7.5em;
+}
+
+.glob {
   color: white;
+  margin: 1.2em auto;
+  font-size: 1.4rem;
 }
 
-.App-link {
-  color: #61dafb;
+
+/* Cryptocurrencies */
+
+.home {
+  background-color: black;
+  display: flex;
+  padding-bottom: 1.1em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.home-crypto-dash {
+  background-color: black;
+  color: rgb(255, 255, 255);
+  margin-left: -5.2em;
+  padding-right: 0.5em;
+  height: 74.5vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  display: flex;
+  position: relative;
 }
+
+.row {
+  margin-top: 2.4em;
+  margin-bottom: 1.5em;
+}
+
+.gridStyle {
+  width: 25%;
+  text-align: center;
+}
+
+.crypto-image{
+  width:35px;
+}
+
+.card:hover {
+  border: 1px solid red;
+}
+
+
+/* News */
+
+.news-card{
+  height: 250px;
+}
+
+.news-image-container{
+  display: flex !important;
+  justify-content: space-between !important;
+}
+
+.news-title{
+width: 70%;
+}
+
+.news-image-container .img{
+  width:100px;
+  height:100px;
+}
+.news-card p{
+  color: black;
+  margin: 10px 0px !important;
+}
+
+.provider-name{
+  margin-left: 10px;
+}
+
+.home-row {
+  height: 74.5vh;
+  padding: 0.5em;
+  margin-left: -1em;
+}
+
+/* media queries */
+
+@media screen and (max-width:1600px) {
+
+  .background {
+    padding-top: 2.25em;
+    padding-left: 4.3em;
+  }
+  
+  .content{
+    width: 95%;
+    height: 95vh;
+  }
+
+  .globalStats {
+    padding-left: 0.1em;
+  }
+
+  .globalstat-row{
+    text-align: center;
+    padding-top: 1em;
+   }
+
+  .home-crypto-dash {
+    height: 72vh;
+  }
+
+  .menu {
+    margin-top: 0.1em;
+  }
+
+  .news-card{
+    height: 400px;
+    width: 23em;
+  }
+
+
+
+
+}
+
+
+
